@@ -1,0 +1,267 @@
+/* DEV-MIND™ Custom Styles */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-blue: #3b82f6;
+  --primary-purple: #8b5cf6;
+  --primary-green: #10b981;
+  --primary-red: #ef4444;
+  --bg-primary: #111827;
+  --bg-secondary: #1f2937;
+  --bg-tertiary: #374151;
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+  --border-color: #4b5563;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  min-height: 100vh;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #374151;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6b7280;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glow Effects */
+.glow-border {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  border: 1px solid rgba(59, 130, 246, 0.5);
+}
+
+.glow-button {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+  transition: all 0.3s ease;
+}
+
+.glow-button:hover {
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
+  transform: translateY(-2px);
+}
+
+.glow-purple {
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
+}
+
+.glow-purple:hover {
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.6);
+}
+
+.glow-green {
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+}
+
+.glow-green:hover {
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.6);
+}
+
+.glow-red {
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.4);
+}
+
+.glow-red:hover {
+  box-shadow: 0 0 25px rgba(239, 68, 68, 0.6);
+}
+
+/* Background Variants */
+.bg-gray-850 {
+  background-color: #1a202c;
+}
+
+/* CodeMirror Customizations */
+.CodeMirror {
+  height: 100% !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  background: #1f2937 !important;
+  color: #f9fafb !important;
+}
+
+.CodeMirror-focused .CodeMirror-cursor {
+  border-left: 2px solid #3b82f6 !important;
+}
+
+.CodeMirror-selected {
+  background: rgba(59, 130, 246, 0.2) !important;
+}
+
+.CodeMirror-line::selection {
+  background: rgba(59, 130, 246, 0.2) !important;
+}
+
+.CodeMirror-line::-moz-selection {
+  background: rgba(59, 130, 246, 0.2) !important;
+}
+
+.CodeMirror-gutters {
+  background: #374151 !important;
+  border-right: 1px solid #4b5563 !important;
+}
+
+.CodeMirror-linenumber {
+  color: #9ca3af !important;
+}
+
+/* Auto-expanding textarea */
+.auto-expand {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Toast Notifications */
+.toast {
+  background: linear-gradient(135deg, #1f2937, #374151);
+  border: 1px solid #4b5563;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.toast.show {
+  transform: translateX(0);
+}
+
+.toast-success {
+  border-left: 4px solid #10b981;
+}
+
+.toast-error {
+  border-left: 4px solid #ef4444;
+}
+
+.toast-warning {
+  border-left: 4px solid #f59e0b;
+}
+
+.toast-info {
+  border-left: 4px solid #3b82f6;
+}
+
+/* Animation for typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.typing-animation {
+  overflow: hidden;
+  border-right: 2px solid #3b82f6;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #3b82f6 }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  
+  .flex-1 {
+    flex: none;
+    height: 50vh;
+  }
+  
+  header {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .language-selector,
+  .file-upload {
+    width: 100%;
+  }
+  
+  .fixed.bottom-6.right-6 {
+    bottom: 16px;
+    right: 16px;
+  }
+}
+
+/* Loading Animation */
+.loading-dots {
+  display: inline-block;
+}
+
+.loading-dots::after {
+  content: '';
+  animation: loading-dots 1.5s infinite;
+}
+
+@keyframes loading-dots {
+  0%, 20% { content: ''; }
+  40% { content: '.'; }
+  60% { content: '..'; }
+  80%, 100% { content: '...'; }
+}
+
+/* Drag and Drop Styles */
+.drag-over {
+  background: rgba(59, 130, 246, 0.1);
+  border: 2px dashed #3b82f6;
+}
+
+/* Button Hover Effects */
+button {
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Focus Styles */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+/* Glass Effect for Modals */
+.glass-effect {
+  background: rgba(31, 41, 55, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
