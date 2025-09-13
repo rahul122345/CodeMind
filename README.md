@@ -27,32 +27,6 @@ A premium, production-level journaling platform designed specifically for develo
 - **Accessibility**: WCAG-compliant design with keyboard navigation
 - **Security**: Client-side only - no data leaves your browser
 
-## 📁 Project Structure
-
-```
-dev-mind/
-├── index.html                 # Main application entry point
-├── style.css                  # Custom styles and animations
-├── app.js                     # Main application orchestrator
-├── components/                # Modular UI components
-│   ├── JournalInput.js       # Auto-expanding journal textarea
-│   ├── CodeEditor.js         # CodeMirror integration
-│   ├── ReflectionOutput.js   # AI response display with animations
-│   ├── FileUploader.js       # File handling and validation
-│   ├── ExportManager.js      # Export functionality
-│   ├── ToastManager.js       # Notification system
-│   └── ModalManager.js       # Dialog management
-├── backend/                   # Backend utilities and API
-│   ├── api.js                # OpenRouter API integration
-│   ├── prompts/              # AI prompt templates
-│   │   └── reflection_prompt.txt
-│   └── utils/                # Utility modules
-│       ├── storage.js        # localStorage management
-│       ├── detectLang.js     # Advanced language detection
-│       └── validateCodeMatch.js # Code validation
-└── README.md                 # This file
-```
-
 ## 🛠 Tech Stack
 
 - **Frontend**: Vanilla JavaScript (ES6+), HTML5, CSS3
@@ -95,19 +69,6 @@ Code Context: [Paste your GraphQL queries]
 AI Reflection: Offers structured learning path, common pitfalls, and recommended resources.
 ```
 
-## 🎯 STAR Resume Bullet Points
-
-Perfect for showcasing your development skills:
-
-- **Architected** a production-level AI-powered developer journaling platform using vanilla JavaScript, implementing modular ES6 architecture with 10+ reusable components and achieving 95% code coverage through comprehensive error handling
-
-- **Engineered** an intelligent code analysis system with advanced language detection supporting 15+ programming languages, implementing pattern-based validation algorithms that achieve 90%+ accuracy in code-language matching
-
-- **Developed** a sophisticated AI integration layer using OpenRouter API with Claude/GPT models, implementing retry logic, rate limiting, and graceful fallbacks that reduced API errors by 80% and improved user experience
-
-- **Designed** a responsive, accessible VS Code-inspired interface using modern CSS3 and Tailwind, implementing smooth animations, toast notifications, and modal systems that increased user engagement by 60%
-
-- **Implemented** a robust client-side storage system with auto-save functionality, session management, and data export capabilities (JSON/Markdown), ensuring zero data loss and seamless user experience across sessions
 
 ## 🔧 Advanced Features
 
