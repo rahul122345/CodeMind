@@ -1,6 +1,6 @@
 # CODE-MIND™ - AI-Powered Developer Journal
 
-A premium, production-level journaling platform designed specifically for developers. DEV-MIND™ combines the power of AI with an intuitive VS Code-inspired interface to help developers reflect on their coding challenges, debug more effectively, and accelerate their learning process.
+A premium, production-level journaling platform designed specifically for developers. CODE-MIND™ combines the power of AI with an intuitive VS Code-inspired interface to help developers reflect on their coding challenges, debug more effectively, and accelerate their learning process.
 
 ## 🚀 Features
 
