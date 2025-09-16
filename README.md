@@ -112,6 +112,6 @@ DEV-MIND™ follows Apple-level design aesthetics with:
 
 ---
 
-**DEV-MIND™** - Elevate your development process with AI-powered reflection and intelligent code analysis.
+**CODE-MIND™** - Elevate your development process with AI-powered reflection and intelligent code analysis.
 
 *Built with ❤️ for developers, by developers.*
