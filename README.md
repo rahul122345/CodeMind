@@ -45,7 +45,7 @@ A premium, production-level journaling platform designed specifically for develo
 
 ### API Key Setup
 1. Visit [OpenRouter](https://openrouter.ai/keys) to get your API key
-2. Click the settings icon in DEV-MIND™
+2. Click the settings icon in CODE-MIND™
 3. Enter your API key (stored locally, never transmitted)
 4. Start getting AI-powered reflections!
 
@@ -88,7 +88,7 @@ JavaScript, TypeScript, Python, Java, C++, C, JSON, HTML, CSS, SQL, Go, Rust, PH
 
 ## 🎨 Design Philosophy
 
-DEV-MIND™ follows Apple-level design aesthetics with:
+CODE-MIND™ follows Apple-level design aesthetics with:
 - **Minimalist Interface**: Clean, distraction-free environment
 - **Consistent Typography**: JetBrains Mono for code, system fonts for UI
 - **Thoughtful Animations**: Subtle micro-interactions that enhance UX
